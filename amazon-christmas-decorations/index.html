@@ -1,6 +1,19 @@
 <html>
 	<head></head>
 	<body>
-		<div id="div_man" onclick="location.href='http://google.com'">click me</div>
+		<div id="topBar">
+		    <a href ="#" id="load_home"> HOME </a>
+		</div>
+		<div id ="content">        
+		</div>
+
+		<script>
+		$(document).ready( function() {
+		    $("#load_home").on("click", function() {
+			$("#content").load("https://google.com");
+		    });
+		});
+		</script>
+
 	</body>
 </html>
